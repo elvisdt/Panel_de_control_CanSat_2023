@@ -1,0 +1,34 @@
+El comando AT est  desusado. Use en su lugar schtasks.exe.
+
+El comando no es v lido.
+
+El comando AT programa la ejecuci¢n de comandos y programas en un equipo a
+una hora y fecha especificadas. El servicio de programaci¢n debe estar en
+ejecuci¢n para utilizar el comando AT.
+                                 
+AT [\\equipo] [ [id] [/DELETE] | /DELETE [/YES]]                    
+AT [\\equipo] hora [/INTERACTIVE]
+    [ /EVERY:fecha[,...] | /NEXT:fecha[,...]] "comando"
+
+\\equipo           Especifica un equipo remoto. Si se omite este
+                   par metro, los comandos se programan en el equipo
+                   local.             
+id                 Es un n£mero de identificaci¢n asignado al comando
+                   programado.                                                
+/delete            Cancela un comando programado. Si se omite id, se
+                   cancelar n todos los comandos programados en el equipo.
+/yes               Se usa con el comando de cancelaci¢n de todos los
+                   trabajos cuando no se desea ninguna confirmaci¢n.
+/interactive       Permite a la tarea interactuar con el escritorio del
+                   usuario cuya sesi¢n coincide con el momento de
+                   ejecuci¢n de la tarea.
+/every:fecha[,...] Ejecuta el comando cada d¡a de la semana o mes
+                   especificado. Si se omite la fecha, se asume que es el
+                   d¡a actual del mes.                                        
+/next:fecha[,...]  Ejecuta el comando especificado la pr¢xima vez que
+                   aparezca ese d¡a (por ejemplo, el pr¢ximo jueves). Si
+                   se omite la fecha, se asume que es el d¡a actual del
+                   mes.
+"comando"          Es el comando de Windows NT o programa por lotes que se
+                   va a ejecutar.
+
