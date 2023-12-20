@@ -303,8 +303,6 @@ class App(customtkinter.CTk):
         
         #self.home_textbox.insert("0.0", "\n\n")
 
-        
-
         banner1 = AsciiA.welcome_mtrx()
         banner2 = AsciiA.cohete_mtrx()
         self.current_position = 0
